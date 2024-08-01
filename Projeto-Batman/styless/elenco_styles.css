@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-align: center;
+}
+
+#logo {
+    width: 90px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('https://pbs.twimg.com/media/FBwJWeQXIAItfyH.jpg:large');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.title-casting {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 30px;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://pyxis.nymag.com/v1/imgs/410/581/85f581cfe2a472a23fc11e141ce66c6fdd-robert-pattinson.rsquare.w330.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://assets.teenvogue.com/photos/621f805e7c26da468a4eed7a/4:3/w_2139,h_1604,c_limit/GettyImages-1375423274.jpg')
+}
+
+.banner-3 {
+    background-image: url('https://pyxis.nymag.com/v1/imgs/1b0/bb4/b1bf6119d3685d45599f7893b1d1325b60-pauldano.jpg')
+}
+
+.banner-4 {
+    background-image: url('https://metro.co.uk/wp-content/uploads/2022/02/SEI_89676798.jpg?quality=90&strip=all&zoom=1&resize=480%2C719')
+}
+
+.banner-5 {
+    background-image: url('https://www.rollingstone.com/wp-content/uploads/2022/07/GettyImages-1375625626c.jpg?w=1581&h=1054&crop=1');
+}
+
+.banner-6 {
+    background-image: url('https://sobresagas.com.br/wp-content/uploads/2022/05/colin-farrell-e-suas-5-atuacoes-inesqueciveis-no-cinema-voce-vai-se-surpreender-1200x900.jpg');
+}
+
+.banner-7 {
+    background-image: url('https://c8.alamy.com/zooms/9/61706de8b78c47519e1068e1057ed92f/2htne8r.jpg');
+}
+
+.banner-8 {
+    background-image: url('https://wp.inews.co.uk/wp-content/uploads/2022/02/SEI_89678768.jpg');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
